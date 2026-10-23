@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Logitech G Pro X Superlight",
+    "category": "Mice",
+    "price": 122,
+    "image": "https://m.media-amazon.com/images/I/615CE5wL-tL.jpg",
+    "description": "The Logitech G Pro X Superlight is a high-performance gaming mouse designed to give you a competitive edge. With its lightweight design, advanced sensor technology, and customizable buttons, it's a favorite among professional gamers."
+  },
+  {
+    "title": "Grand Theft Auto V",
+    "category": "Games",
+    "price": 99,
+    "image": "https://d3fa68hw0m2vcc.cloudfront.net/32c/240329104.jpeg",
+    "description": "Grand Theft Auto is an iconic open-world action-adventure video game series known for its immersive storytelling, open-ended gameplay, and vast, living game worlds. Whether you're exploring the criminal underworld of a fictional city or embarking on epic heists, GTA offers an unforgettable gaming experience."
+  },
+  {
+    "title": "Gaming PC",
+    "category": "PCs",
+    "price": 2500,
+    "image": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3060-ti/Delta-Rtx-3060-Gaming-PC-kw-2.png",
+    "description": "A gaming PC is the ultimate platform for gamers. It offers the power and flexibility to run the latest games at the highest settings, support for virtual reality experiences, and the ability to multitask efficiently. Whether you're a casual gamer or an esports enthusiast, a gaming PC provides the best gaming experience.\n\n\n\n\n"
+  },
+  {
+    "title": "AirPods Pro",
+    "category": "AirPods",
+    "price": 250,
+    "image": "https://www.macworld.com/wp-content/uploads/2023/01/apple-airpods-pro-100815758-orig.jpg?quality=50&strip=all",
+    "description": "AirPods Pro represent the pinnacle of wireless audio experience. These earbuds deliver clear and detailed sound, feature active noise cancellation for a peaceful listening experience, and are incredibly comfortable. Offering superior audio quality and a compact design, AirPods Pro are the perfect choice for music enthusiasts."
+  },
+  {
+    "title": "SteelSeries Apex Pro TKL",
+    "category": "Keyboards",
+    "price": 189,
+    "image": "https://pngimg.com/d/keyboard_PNG101843.png",
+    "description": "The SteelSeries Apex Pro TKL is a mechanical gaming keyboard that puts control in your hands. With customizable mechanical switches, RGB lighting, and a compact tenkeyless design, it's a top choice for competitive gamers."
+  },
+  {
+    "title": "Alienware Monitor",
+    "category": "Monitors",
+    "price": 462,
+    "image": "https://m.media-amazon.com/images/I/91cU88oSl8L.jpg",
+    "description": "The Alienware Monitor offers an immersive gaming experience and stunning image quality. With a high refresh rate and high resolution, this monitor allows you to enjoy games and multimedia content in all their glory."
+  },
+  {
+    "title": "iPhone 14 Pro",
+    "category": "Phones",
+    "price": 1154,
+    "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-125428/Apple-iPhone-14-Pro-Max_FINAL_featured-image-packshot-review-1.jpg",
+    "description": "The iPhone 14 Pro is the latest embodiment of smartphone perfection. With its sleek design, advanced camera, and stunning performance, this phone is designed to provide you with the best mobile experience possible"
+  },
+  {
+    "title": "MacBook Pro 14",
+    "category": "Laptops",
+    "price": 1604,
+    "image": "https://cdn.mos.cms.futurecdn.net/ypPU5BkLx6jYmawjkhpeNE.png",
+    "description": "The MacBook Pro 14 is a high-end laptop designed for power users and creative professionals. It boasts a powerful processor, a high-resolution display, and an elegant aluminum build. With advanced display and audio technologies, it's perfect for handling resource-intensive tasks or enjoying high-quality multimedia content. Its slim design and portability make it the ideal choice for on-the-go professionals and content creators."
+  }
+]
