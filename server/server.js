@@ -13,7 +13,6 @@ const app = express()
 const PORT = 8000
 dotenv.config()
 
-// const password = '7WGL18KPnEIRsEUt'
 const password = process.env.PASSWORD
 app.use(express.json())
 // app.use(cors())
