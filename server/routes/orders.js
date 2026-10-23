@@ -4,12 +4,12 @@ import { Order } from '../models/Order.js'
 import { Product } from '../models/Product.js'
 import { requireAuth } from '../middleware/auth.js'
 import { getStripe, stripeEnabled } from '../stripe.js'
+import { clientUrl } from '../origins.js'
 
 const router = express.Router()
 
 router.use(requireAuth)
 
-const clientUrl = () => process.env.CLIENT_URL || 'http://localhost:3000'
 
 router.get('/', async (req, res, next) => {
   try {
@@ -51,7 +51,7 @@ router.post('/checkout', async (req, res, next) => {
     if (!stripeEnabled()) {
       order.status = 'paid'
       await order.save()
-      return res.status(201).json({ url: `${clientUrl()}/checkout/success?order=${order._id}` })
+      return res.status(201).json({ url: `${clientUrl(req)}/checkout/success?order=${order._id}` })
     }
 
     const session = await getStripe().checkout.sessions.create({
@@ -65,8 +65,8 @@ router.post('/checkout', async (req, res, next) => {
         },
       })),
       metadata: { orderId: String(order._id) },
-      success_url: `${clientUrl()}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${clientUrl()}/cart`,
+      success_url: `${clientUrl(req)}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${clientUrl(req)}/cart`,
     })
 
     order.stripeSessionId = session.id
