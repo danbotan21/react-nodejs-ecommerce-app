@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-zinc-50 text-zinc-800 antialiased;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-violet-600 px-5 py-2.5 font-semibold text-white transition hover:bg-violet-700 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white px-4 py-2.5 font-medium text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-50;
+  }
+  .field {
+    @apply w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 outline-none transition placeholder:text-zinc-400 focus:border-violet-400 focus:ring-4 focus:ring-violet-100;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-zinc-700;
+  }
+}
