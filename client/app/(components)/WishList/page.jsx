@@ -9,9 +9,16 @@ const WishList = () => {
   const { cartProducts, setCartProducts } = useContext(PropsContext) // Produsele ce le adaugam in Cart Page
   const [storedToken, setStoredToken] = useState('')
 
+  const [allWishProducts, setAllWishProducts] = useState([])
+
   useEffect(() => {
     setStoredToken(localStorage.getItem('token'))
   }, [storedToken])
+
+  // localStorage exists only in the browser, so it is read after the first render
+  useEffect(() => {
+    setAllWishProducts(JSON.parse(localStorage.getItem('wishProducts')) || [])
+  }, [wishproduct])
 
   const removeProductFromWishList = (productId) => {
     let wishProducts = JSON.parse(localStorage.getItem('wishProducts'))
@@ -58,7 +65,6 @@ const WishList = () => {
     axios.defaults.headers.post['Authorization'] = `Bearer ${storedToken}`
   }
 
-  let allWishProducts = JSON.parse(localStorage.getItem('wishProducts'))
 
   return (
     <div className='wish-list-parent'>
